@@ -1,11 +1,12 @@
+
 import 'package:daryo_app/screens/home/details/details_page.dart';
 import 'package:flutter/material.dart';
 import '../../models/news_response.dart';
 
 class NewsItem extends StatelessWidget {
-   final Articles article;
+  final Articles article;
 
-   const NewsItem({Key? key, required this.article,}) : super(key: key);
+  const NewsItem({Key? key, required this.article,}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +36,7 @@ class NewsItem extends StatelessWidget {
                   const SizedBox(
                     width: 4.0,
                   ),
-                 const Text("600",
+                  const Text("600",
                       style:
                       TextStyle(color: Colors.blue, fontSize: 12.0))
                 ],
@@ -55,7 +56,7 @@ class NewsItem extends StatelessWidget {
                 const SizedBox(width: 12.0),
                 Expanded(
                   child: Text(
-                   article.title!,
+                    article.title!,
                     style:
                     const TextStyle(fontWeight: FontWeight.w500, height: 1.2),
                   ),
